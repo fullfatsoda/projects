@@ -3,5 +3,6 @@ Specify how many words you would like the passphrase to be and it will generate 
 Much more memorable than *'hunter2'*.
 
 ## Sample output
-(passgen) [chris@heartofgold passgen]$ python passgen.py
-competent wonderful melodic third rare wavy voluminous llama
+`(passgen) [chris@heartofgold passgen]$ python passgen.py`
+
+`competent wonderful melodic third rare wavy voluminous llama`
