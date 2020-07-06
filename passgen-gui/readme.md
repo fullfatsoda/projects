@@ -1,5 +1,8 @@
 ## passgen-gui
-A GUI version of my passphrase generator made with PySimpleGUI.
+A GUI version of my passphrase generator made with PySimpleGUI
+
+## generate a secure passphrase n in length
+Specify how many words you would like the passphrase to be and it will generate it based on some adjectives and ending in a type of animal, the passphrase will then be displayed and copied to your clipboard. Much more memorable than 'hunter2'.
 
 ## requirements
 Python 3.x
