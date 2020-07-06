@@ -24,6 +24,7 @@ def generate_passphrase(n):
     # output
     print(passphrase)
 
+sg.theme('SystemDefault1')
 
 layout = [
     [
