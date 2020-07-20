@@ -110,8 +110,6 @@ def display_game_information():
     print(f"Guessed so far: {display_guesses_made}")
 
 
-
-
 # print the empty word and show the player how many they need to guess
 print(
     f"Guess the word to save the man. The word has {len(word)} letters in it. Good luck!")
@@ -129,7 +127,7 @@ while not game_over:
             if not match("^[a-z]*$", player_guess) or len(player_guess) > 1:
                 print("Only guess one character that is a - z.")
                 continue
-            break # it's a valid guess
+            break  # it's a valid guess
         # add it to the list of guesses made
         guesses_made.append(player_guess)
         display_guesses_made = ' '.join(guesses_made)
