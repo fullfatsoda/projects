@@ -107,7 +107,6 @@ game_won = False
 # print the empty word and show the player how many they need to guess
 print(
     f"Guess the word to save the man. The word has {len(word)} letters in it. Good luck!")
-print(word)
 while not game_over:
     # and there are guesses left
     while guesses_left > 0:
@@ -133,7 +132,7 @@ while not game_over:
         if '_' not in display_hidden_word:
             game_won = True
             break
-        if hidden_word != word and guesses_left == 0:
+        if '_' in display_hidden_word and guesses_left == 0:
             game_over = True
             break
     if game_won:
