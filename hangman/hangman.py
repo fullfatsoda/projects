@@ -122,10 +122,14 @@ while not game_over:
     while guesses_left > 0:
         # get player input and display the game information
         # only allow a-z
+        # don't allow if already guessed
         while not valid_guess:
             player_guess = str(input("Make a guess: "))
             if not match("^[a-z]*$", player_guess) or len(player_guess) > 1:
                 print("Only guess one character that is a - z.")
+                continue
+            if player_guess in guesses_made:
+                print("You've already tried that letter...")
                 continue
             break  # it's a valid guess
         # add it to the list of guesses made
