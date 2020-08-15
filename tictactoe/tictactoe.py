@@ -95,7 +95,7 @@ class Player:
             '012', '345', '678',
             '036', '147', '258',
             '048', '246')
-        b, m = game.board, self.moves
+        m = self.moves
         for n in range(len(wins)):
             a, b, c = int(wins[n][0]), int(wins[n][1]), int(wins[n][2])
             if a in m and b in m and c in m:
