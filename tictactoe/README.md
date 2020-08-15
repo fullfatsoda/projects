@@ -7,9 +7,9 @@ Tic-tac-toe (American English), noughts and crosses (British English), or Xs and
 Positions on game board are as follows:
 
 ```
-0 | 1 | 2
+7 | 8 | 9
 ---------
-3 | 4 | 5
+4 | 5 | 6
 ---------
-6 | 7 | 8
+1 | 2 | 3
 ```
