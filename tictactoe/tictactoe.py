@@ -2,7 +2,7 @@ from random import randint
 from sys import exit
 
 
-class Game():
+class Game:
     def __init__(self):
         self.playing = True
         self.board = [" " for x in range(9)]
@@ -32,7 +32,6 @@ class Game():
         choice = str(input())
         self.player = Player("Player", choice[0])
         self.computer = Player("Computer", "$")
-
 
     def draw(self):
         b = self.board
@@ -79,7 +78,6 @@ class Game():
             self.get_move(self.computer)
 
 
-
 class Player:
     def __init__(self, name, char):
         self.name = name
@@ -103,7 +101,8 @@ class Player:
                 game.playing = False
                 game.draw()
                 game.prompt_new_game()
-                
+
+
 if __name__ == "__main__":
     game = Game()
     game.loop()
